@@ -6,7 +6,7 @@ import google.generativeai as genai
 app = Flask(__name__)
 CORS(app, origins=["*"])
 
-gemini_api_key = "YOUR_API_KEY"
+gemini_api_key = ""
 
 genai.configure(api_key=gemini_api_key)
 
@@ -21,7 +21,8 @@ def submit():
     data = request.get_json()
     ingredients = data.get('ingredients')
     ingredients_list = ', '.join(ingredients)
-    phrase = f"Gemini, qual receita posso fazer com esses ingredientes que tenho em casa: {ingredients_list}, e qual o modo de preparo ?."
+    restricao = data.get('restricao')
+    phrase = f"Gemini, qual receita posso fazer com esses ingredientes que tenho em casa: {ingredients_list}, e qual o modo de preparo ?. Tenho essa restrição: {restricao}. Me traga também uma análise nutricional da receita."
     response_from_gemini = chat_session.send_message(phrase)
     
     response_text = ""
