@@ -2,7 +2,8 @@
 
 ReceitAI é um projeto de demonstração de uma aplicação de IA para sugerir receitas com base nos ingredientes que você tem em casa. A aplicação utiliza Flask no backend para receber os dados e retornar sugestões de receitas, e Streamlit no frontend para a interface do usuário.
 
-![ReceitAI](path/to/logo.png)
+![Logo](https://github.com/RhuanRP/ReceitAI/assets/86031472/157b70a4-c48c-465e-a5fc-2f1477d27a5c)
+
 
 ## 📋 Funcionalidades
 
@@ -19,13 +20,14 @@ ReceitAI é um projeto de demonstração de uma aplicação de IA para sugerir r
 - **Comunicação**: Requests
 
 ## 📁 Estrutura do Projeto
-
+```plaintext
 ReceitAI/
 ├── backend/
 │   └── app.py
 ├── frontend/
 │   └── app.py
 └── README.md
+```
 
 🚀 Como Executar o Projeto
 
