@@ -1,4 +1,3 @@
-
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import google.generativeai as genai
@@ -22,7 +21,8 @@ def submit():
     ingredients = data.get('ingredients')
     ingredients_list = ', '.join(ingredients)
     restricao = data.get('restricao')
-    phrase = f"Gemini, qual receita posso fazer com esses ingredientes que tenho em casa: {ingredients_list}, e qual o modo de preparo ?. Tenho essa restrição: {restricao}. Me traga também uma análise nutricional da receita."
+    refeicao = data.get('refeicao')
+    phrase = f"Gemini, qual receita posso fazer com somente esses ingredientes que tenho em casa: {ingredients_list}, e qual o modo de preparo ? Desejo que esse receita seja adquada para o(a): {refeicao}. Tenho essa restrição: {restricao}. Me traga também uma análise nutricional da receita."
     response_from_gemini = chat_session.send_message(phrase)
     
     response_text = ""
