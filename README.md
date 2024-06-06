@@ -1,8 +1,10 @@
-# ReceitAI 🍴
+# 🍴 ReceitAI
 
 ReceitAI é um projeto de demonstração de uma aplicação de IA para sugerir receitas com base nos ingredientes que você tem em casa. A aplicação utiliza Flask no backend para receber os dados e retornar sugestões de receitas, e Streamlit no frontend para a interface do usuário.
 
-## Funcionalidades
+![ReceitAI](path/to/logo.png)
+
+## 📋 Funcionalidades
 
 - Insira os ingredientes que você tem em casa.
 - Selecione restrições alimentares.
@@ -10,62 +12,68 @@ ReceitAI é um projeto de demonstração de uma aplicação de IA para sugerir r
 - Receba uma receita personalizada e uma análise nutricional.
 - Baixe a receita sugerida.
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-- Flask
-- Flask-CORS
-- Google Generative AI (gemini-1.5-flash-latest)
-- Streamlit
-- Requests
+- **Backend**: Flask, Flask-CORS, Google Generative AI (gemini-1.5-flash-latest)
+- **Frontend**: Streamlit
+- **Comunicação**: Requests
 
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ReceitAI/
 ├── backend/
-│   ├── app.py
+│   └── app.py
 ├── frontend/
-│   ├── app.py
-├── README.md
+│   └── app.py
+└── README.md
 
+🚀 Como Executar o Projeto
 
-## Como Executar o Projeto
+## Backend
 
-### Backend
+Clone o repositório:
 
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/receitai.git
-   cd receitai/backend
+```bash
+git clone https://github.com/seu-usuario/receitai.git
+cd receitai/backend
+```
+
 Crie e ative um ambiente virtual:
 
+```bash
 python -m venv venv
 source venv/bin/activate  # Para Linux/Mac
 .\venv\Scripts\activate  # Para Windows
+```
 
-2. **Instale as dependências:**
-
+Instale as dependências:
+```bash
 pip install flask flask-cors google-generativeai
+```
+
 Execute o servidor Flask:
-Copiar código
+```bash
 python app.py
+```
 
 ## Frontend
 Em outra janela do terminal, navegue até o diretório frontend:
-
+```bash
 cd ../frontend
-Crie e ative um ambiente virtual (se necessário):
+```
 
-python -m venv venv
-source venv/bin/activate  # Para Linux/Mac
-.\venv\Scripts\activate  # Para Windows
 Instale as dependências:
-
+```bash
 pip install streamlit requests
+```
+
 Execute o Streamlit:
+```bash
+streamlit run FrontEnd.py
+```
 
+## Acessando a Aplicação
 
-streamlit run app.py
-Acessando a Aplicação
 Abra o navegador e vá para http://localhost:8501 para acessar a interface do usuário.
 Insira os ingredientes que você tem em casa separados por vírgula.
 Selecione qualquer restrição alimentar, se houver.
@@ -73,5 +81,8 @@ Escolha o tipo de refeição desejada.
 Clique em "Enviar" para receber uma receita sugerida.
 Baixe a receita, se desejar.
 
+## 🤝 Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorar o projeto.
 
-   
+
+
