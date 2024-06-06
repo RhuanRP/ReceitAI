@@ -38,42 +38,32 @@ ReceitAI/
    cd receitai/backend
 Crie e ative um ambiente virtual:
 
-
-Copiar código
 python -m venv venv
 source venv/bin/activate  # Para Linux/Mac
 .\venv\Scripts\activate  # Para Windows
-Instale as dependências:
 
+2. **Instale as dependências:**
 
-Copiar código
 pip install flask flask-cors google-generativeai
 Execute o servidor Flask:
-
-
 Copiar código
 python app.py
-Frontend
+
+## Frontend
 Em outra janela do terminal, navegue até o diretório frontend:
 
-
-Copiar código
 cd ../frontend
 Crie e ative um ambiente virtual (se necessário):
 
-Copiar código
 python -m venv venv
 source venv/bin/activate  # Para Linux/Mac
 .\venv\Scripts\activate  # Para Windows
 Instale as dependências:
 
-
-Copiar código
 pip install streamlit requests
 Execute o Streamlit:
 
 
-Copiar código
 streamlit run app.py
 Acessando a Aplicação
 Abra o navegador e vá para http://localhost:8501 para acessar a interface do usuário.
